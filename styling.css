@@ -185,6 +185,8 @@ body{
     height: 500px;
     width:750px;
     display: inline-block;
+    text-align: center;
+    align-items: center;
     border-style: inset;
     border-width: 30px;
     border-color: rgb(48, 121, 189);
