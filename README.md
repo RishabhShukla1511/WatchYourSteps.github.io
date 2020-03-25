@@ -5,6 +5,9 @@
 ![Badge](https://img.shields.io/badge/Map-ff69b4)
 ![Badge](https://img.shields.io/badge/Health-yellow)
 ![Badge](https://img.shields.io/badge/Time%20Walked-orange)
+#### NOTE
+**THE SITE MAY APPEAR A LITTLE DISTORTED DEPENDING ON YOUR BROWSER VERSION TO GET THE PERFECT EXPERIENCE CLONE THE REPOSITORY ON YOUR MACHINE AND THEN BY RUNNING
+index.html command PERFECT SITE CAN BE VIEWED**
 
 Link: https://rishabhshukla1511.github.io/WatchYourSteps.github.io/
 
