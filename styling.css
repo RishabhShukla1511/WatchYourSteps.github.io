@@ -1,0 +1,215 @@
+body{
+    background-color: black;
+    font-family: "Copperplate Gothic Light";
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    align-items: center;
+}
+
+#step-buttons-start:hover{
+    background-color: rgb(60, 197, 60);
+}
+
+#step-buttons-stop:hover{
+    background-color: rgb(230, 44, 44);
+}
+
+.caption1{
+    text-align: center;    
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.mydiv{
+  position: relative;
+  animation-name: example;
+  animation-duration: 10s;
+  /* animation-iteration-count: infinite;   */
+  animation-direction: alternate;
+}
+
+@keyframes example {
+    0%   { left:200px; top:0px;}
+    50%  { left:1220px; top:0px;}
+    100% {left:200px; top:0px;}  
+}
+
+#details-button{
+    background-color: rgb(48, 121, 189);
+    color: black;
+    width: 200px;
+    height: 50px;
+    margin-left: 44%;
+}
+
+#details-button:hover{
+    background-color: rgb(174, 184, 35);
+}
+
+.head{
+    position: relative;
+    margin-left: 42%;
+}
+
+.horizontal-line{
+    text-align: center;
+    margin-left: 0;
+}
+
+.step-heads{
+    display: inline-block;
+    
+}
+
+#step-buttons-start{
+    display: inline-block;
+    margin-left: 20px;
+    background-color: rgb(48, 121, 189);
+    color: black;
+    width: 200px;
+    height: 50px;
+}
+
+#step-buttons-stop{
+    display: inline-block;
+    margin-left: 20px;
+    background-color: rgb(48, 121, 189);
+    color: black;
+    width: 200px;
+    height: 50px;
+}
+
+#glowing{
+    display: inline-block;
+    font-size:45px;
+    color: rgb(48, 121, 189);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#glowd{
+    margin-left: 20px;
+    margin-right:20px;
+    display: inline-block;
+    font-size:45px;
+    color: rgb(48, 121, 189);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#glowh{
+    margin-left: 20px;
+    margin-right:20px;
+    display: inline-block;
+    font-size:45px;
+    color: rgb(48, 121, 189);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#glowm{
+    margin-left: 20px;
+    margin-right:20px;
+    display: inline-block;
+    font-size:45px;
+    color: rgb(48, 121, 189);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#glows{
+    margin-left: 20px;
+    margin-right:20px;
+    display: inline-block;
+    font-size:45px;
+    color: rgb(48, 121, 189);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowing
+{
+    from
+    {
+      text-shadow: 0 0 10px rgb(48, 121, 189), 0 0 20px rgb(48, 121, 189), 0 0 30px rgb(48, 121, 189), 0 0 40px rgb(48, 121, 189), 0 0 50px rgb(48, 121, 189), 0 0 60px rgb(48, 121, 189), 0 0 70px rgb(48, 121, 189);
+    }
+    
+    to 
+    {
+      text-shadow: 0 0 20px rgb(48, 121, 189), 0 0 30px rgb(48, 121, 189), 0 0 40px rgb(48, 121, 189), 0 0 50px rgb(48, 121, 189), 0 0 60px rgb(48, 121, 189), 0 0 70px rgb(48, 121, 189), 0 0 80px rgb(48, 121, 189);
+    }
+}
+
+
+#glow{
+    margin-left: 20px;
+    margin-right:20px;
+    display: inline-block;
+    font-size:45px;
+    color: rgb(48, 121, 189);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow
+{
+    from
+    {
+      text-shadow: 0 0 10px rgb(48, 121, 189), 0 0 20px rgb(48, 121, 189), 0 0 30px rgb(48, 121, 189), 0 0 40px rgb(48, 121, 189), 0 0 50px rgb(48, 121, 189), 0 0 60px rgb(48, 121, 189), 0 0 70px rgb(48, 121, 189);
+    }
+    
+    to 
+    {
+      text-shadow: 0 0 20px rgb(48, 121, 189), 0 0 30px rgb(48, 121, 189), 0 0 40px rgb(48, 121, 189), 0 0 50px rgb(48, 121, 189), 0 0 60px rgb(48, 121, 189), 0 0 70px rgb(48, 121, 189), 0 0 80px rgb(48, 121, 189);
+    }
+}
+
+.map {
+    height: 500px;
+    width:750px;
+    display: inline-block;
+    border-style: inset;
+    border-width: 30px;
+    border-color: rgb(48, 121, 189);
+}
+
+
+#map-view{
+    text-align: center;
+    display: inline-block;
+    margin-left: 44%;
+    background-color: rgb(48, 121, 189);
+    color: black;
+    width: 200px;
+    height: 50px;
+
+}
+#map-view:hover{
+    background-color: rgb(218, 125, 38);
+}
+.map-head{
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer{
+    align-items: center;
+    text-align: center;
+}

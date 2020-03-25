@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Watch Your Steps</title>
+        <link rel ="icon" href="shoe.jpg" type="site-icon"> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="styling.css">
+        <script type="text/javascript" src="javascript.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script> 
+
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <img src="back-pic.png" class="img-responsive" alt="back-pic" style="width: 100%;">
+            <br/>
+            <p class="caption1">One run can change your day, many runs can change your life</p>
+            
+            <img src="icon-simple.png" class="mydiv" >
+            
+            <p class="caption1">You may be a runner if...
+                You see 5K and automatically think 3.1miles,not $5000
+            </p>
+            <br/>
+            
+            <button type="button" class="btn btn-primary btn-block" id="details-button" data-toggle="modal" data-target="#popUpWindow">Enter Details</button>
+
+            <div class="modal fade" id="popUpWindow">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+            
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title" style="color: black;">Enter Your Personal Details</h3>
+                        </div>
+
+                        <div class="modal-body">
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Age">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="weight" placeholder="Weight (in kilogram)">
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="height" placeholder="Height (in meters)">
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button class="btn btn-primary btn-block" data-dismiss="modal" onclick="getvalues();">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <br/><br/>
+            <hr class="horizontal-line">
+            <h1 class="head"><b>Step Counter</b></h1>
+            <hr class="horizontal-line">
+            <br/>
+            <div class="row">
+                <div class="row">
+                    <div class="col-xs-6 col-md-6">
+                        <p class="step-heads">Press when you start</p>
+                        <button class="btn btn-primary btn-block" id="step-buttons-start" onclick="getStartLocation();">Start</button>
+                    </div>
+                    <div class="col-xs-6 col-md-6">
+                        <p class="step-heads">Press when you stop</p>
+                        <button class="btn btn-primary btn-block" id="step-buttons-stop" onclick="getStopLocation();">Stop</button>
+                    </div>
+                </div>
+            </div>    
+            <br/><br/>
+            
+            <div class="final-result" style="text-align: center;">
+                <p id="glowing">You took</p>
+                <p id="glow">No</p>
+                <p id="glowing">Steps</p>
+            </div>
+
+            <div class="final-result" style="text-align: center;">
+                <p id="glowing">You travelled</p>
+                <p id="glowd">0</p>
+                <p id="glowing">meters</p>
+            </div>
+
+            <div class="final-result" style="text-align: center;">
+                <p id="glowing">Time travelled</p>
+                <p id="glowh">0</p>
+                <p id="glowing">Hours</p>
+                <p id="glowm">0</p>
+                <p id="glowing">Minutes</p>
+                <p id="glows">0</p>
+                <p id="glowing">Seconds</p>
+            </div>
+            <br/><br/>
+            
+            <p class="map-head">Map View</p>
+            
+            <button class="btn btn-primary btn-block" id="map-view" onclick="plot();">View</button>
+            <br/><br/>
+
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3"></div>
+                    <div class="col-xs-12 col-md-3">
+                        <div id="map" class="map"></div>
+                    </div>
+                    <div class="col-xs-12 col-md-3"></div>
+                </div>
+            </div>
+        
+
+            <br/><br/>
+
+            <div class="footer">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <h3>Rishabh Shukla</h3>
+                    <ul>
+                        <a class="Mail" href="mailto:shuklarishabh356@gmail.com"><img hspace="10px" src="mail.png"/></a>
+                        <a class="Linkedin" href="https://www.linkedin.com/in/rishabh-shukla-69362b177/"><img hspace="10px" src="linkedin.png"/></a>
+                        <a class="Github" href="https://github.com/RishabhShukla1511"><img hspace="10px" src="github.png"/></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
