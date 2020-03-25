@@ -6,7 +6,7 @@
 ![Badge](https://img.shields.io/badge/Health-yellow)
 ![Badge](https://img.shields.io/badge/Time%20Walked-orange)
 
-Link: https://www.google.com/
+Link: https://rishabhshukla1511.github.io/WatchYourSteps.github.io/
 
 A site to help people live a healthy life.It tells its user the **Number of Steps travelled** along with **Distance** and **Time**. The user can even see the **Starting and Stopping Locations on a Map**.
 
