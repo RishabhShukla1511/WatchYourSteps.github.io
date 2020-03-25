@@ -1,4 +1,4 @@
-# WatchYourSteps.github.io
+# Watch Your Steps
 
 ![Badge](https://img.shields.io/badge/Watch%20Your%20Steps-BrightGreen)
 ![Badge](https://img.shields.io/badge/Step%20Counter-informational)
