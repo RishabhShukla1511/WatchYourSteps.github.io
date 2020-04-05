@@ -37,7 +37,7 @@ A site to help people live a healthy life.It tells its user the **Number of Step
 * Press the view button to take a look at your starting and ending locations
 
 
-## Sneak peak
+## Sneak peek
 This uses the ‘haversine’ formula to calculate the great-circle distance between two points – that is, the shortest distance over the earth’s surface – giving an ‘as-the-crow-flies’ distance between the points (ignoring any hills they fly over, of course!).
 
 **Haversine formula** :	
