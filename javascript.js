@@ -8,7 +8,7 @@ function getWeight()
     return document.getElementById("weight").value;
 }
 
-var steps,distance,start_hour,start_minute,start_second;
+var steps,distance,start_hour,start_minute,start_second,is_displayed=0;
 
 var is_stop_clicked=new Boolean(false);
 var is_start_clicked=new Boolean(false);
@@ -141,8 +141,9 @@ function plot()
         alert("Press The Start Button");
     else if(is_stop_clicked==false)
         alert("Press The Stop Button");
-    else
+    else if(is_displayed==0)
     {
+        is_displayed=1;
         var map = new ol.Map({
             target: 'map',
             layers: [

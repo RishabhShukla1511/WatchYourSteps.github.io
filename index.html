@@ -74,18 +74,14 @@
             <h1 class="head"><b>Step Counter</b></h1>
             <hr class="horizontal-line">
             <br/>
-            <div class="row">
-                <div class="row">
-                    <div class="col-xs-6 col-md-6">
-                        <p class="step-heads">Press when you start</p>
-                        <button class="btn btn-primary btn-block" id="step-buttons-start" onclick="getStartLocation();">Start</button>
-                    </div>
-                    <div class="col-xs-6 col-md-6">
-                        <p class="step-heads">Press when you stop</p>
-                        <button class="btn btn-primary btn-block" id="step-buttons-stop" onclick="getStopLocation();">Stop</button>
-                    </div>
-                </div>
-            </div>    
+            
+            <div class="btn-group">
+                <button class="btn btn-primary btn-block" id="step-buttons-start" onclick="getStartLocation();">Start</button>
+                <button class="btn btn-primary btn-block" id="step-buttons-stop" onclick="getStopLocation();">Stop</button>
+            </div>
+
+               
+            
             <br/><br/>
             
             <div class="final-result" style="text-align: center;">
@@ -117,14 +113,12 @@
             <br/><br/>
 
 
-            <div class="row">
-                <div class="row">
+             <div class="row">
                     <div class="col-xs-12 col-md-3"></div>
                     <div class="col-xs-12 col-md-3">
                         <div id="map" class="map"></div>
                     </div>
                     <div class="col-xs-12 col-md-3"></div>
-                </div>
             </div>
         
 

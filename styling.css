@@ -68,26 +68,24 @@ body{
 }
 
 #step-buttons-start{
-    display: inline-block;
-    margin-left: 20px;
     background-color: rgb(48, 121, 189);
     color: black;
     width: 200px;
     height: 50px;
+    margin: 1.5em;
 }
 
 #step-buttons-stop{
-    display: inline-block;
-    margin-left: 20px;
     background-color: rgb(48, 121, 189);
     color: black;
     width: 200px;
     height: 50px;
+    margin: 1.5em;
 }
 
 #glowing{
     display: inline-block;
-    font-size:45px;
+    font-size:40px;
     color: rgb(48, 121, 189);
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -99,7 +97,7 @@ body{
     margin-left: 20px;
     margin-right:20px;
     display: inline-block;
-    font-size:45px;
+    font-size:40px;
     color: rgb(48, 121, 189);
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -111,7 +109,7 @@ body{
     margin-left: 20px;
     margin-right:20px;
     display: inline-block;
-    font-size:45px;
+    font-size:40px;
     color: rgb(48, 121, 189);
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -123,7 +121,19 @@ body{
     margin-left: 20px;
     margin-right:20px;
     display: inline-block;
-    font-size:45px;
+    font-size:40px;
+    color: rgb(48, 121, 189);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+#glow{
+    margin-left: 20px;
+    margin-right:20px;
+    display: inline-block;
+    font-size:40px;
     color: rgb(48, 121, 189);
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -135,7 +145,7 @@ body{
     margin-left: 20px;
     margin-right:20px;
     display: inline-block;
-    font-size:45px;
+    font-size:40px;
     color: rgb(48, 121, 189);
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
@@ -216,3 +226,25 @@ body{
     align-items: center;
     text-align: center;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+      float: left;
+      margin-left: 42.8%;
+      margin-right: 40%;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .btn-group{
+      margin-left: 35%;
+      margin-right: 10%;
+  }
